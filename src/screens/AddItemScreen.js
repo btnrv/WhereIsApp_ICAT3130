@@ -1,15 +1,15 @@
 import { ImageBackground } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
-import { useState, useEffect } from 'react';
-import { StyleSheet, Text, TextInput, View, TouchableOpacity, Image } from 'react-native';
+import { useState } from 'react';
+import { Text, TextInput, View, TouchableOpacity, Image } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as Location from 'expo-location';
 import * as ImagePicker from 'expo-image-picker';
 import { Camera } from 'expo-camera';
-import { LinearGradient } from 'expo-linear-gradient';
 import { useFonts } from 'expo-font';
 import { FontAwesome5 } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
+import styles from '../styles/styles';
 
 export default function AddItemScreen() {
     const navigation = useNavigation();
@@ -159,116 +159,3 @@ export default function AddItemScreen() {
         </ImageBackground>
       );
     }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center', 
-    alignItems: 'center', 
-    padding: 20,
-  },
-  title: {
-    fontFamily: 'Monsterrat',
-    fontWeight: "bold",
-    fontStyle: "italic",
-    fontSize: 40,
-    color: '#e2edfe',
-    textAlign: 'center',
-    marginBottom: 20,
-  },
-  input: {
-    width: '90%',
-    height: 50,
-    backgroundColor: '#D7DCEA',
-    borderRadius: 10,
-    paddingHorizontal: 12,
-    marginBottom: 15,
-    fontSize: 16,
-    fontWeight: "bold",
-    fontFamily: 'Monsterrat',
-  },
-  button: {
-    width: 180,
-    height: 70,
-    backgroundColor: '#D7DCEA',
-    borderRadius: 50,
-    alignItems: 'center',
-    justifyContent: 'center',
-    flexDirection: 'row',
-    marginVertical: 10,
-  },
-  buttonText: {
-    color: '#6581BF',
-    fontSize: 20,
-    textAlign: 'center',
-    fontFamily: 'Monsterrat',
-    fontWeight: 'bold',
-  },
-  iconContainer: {
-    width: 22,
-    alignItems: "center",
-    justifyContent: 'center',
-    marginRight: 5,
-  },
-  locationBox: {
-    width: '90%',
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: '#D7DCEA',
-    borderRadius: 30,
-    padding: 2.5,
-    marginVertical: 10,
-  },
-  locationButton: {
-    backgroundColor: '#A1B3D7',
-    borderRadius: 30,
-    paddingVertical: 10,
-    paddingHorizontal: 15,
-    alignItems: 'center',
-    flexDirection: 'row',
-  },
-  locationText: {
-    fontSize: 16,
-    fontFamily: 'Monsterrat',
-    color: '#000',
-    includeFontPadding: false,
-  },
-  cameraBox: {
-    width: '90%',
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: '#D7DCEA',
-    borderRadius: 30,
-    padding: 2.5,
-    marginVertical: 10,
-  },
-  cameraButton: {
-    backgroundColor: '#A1B3D7',
-    borderRadius: 30,
-    paddingVertical: 10,
-    paddingHorizontal: 15,
-    alignItems: 'center',
-    flexDirection: 'row',
-  },
-  cameraText: {
-    fontSize: 16,
-    fontFamily: 'Monsterrat',
-    color: '#000',
-    includeFontPadding: false,
-  },
-  imageContainer: {
-    width: '90%',
-    marginVertical: 10,
-    aspectRatio: 16 / 9,
-    backgroundColor: '#A1B3D7',
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderRadius: 10,
-    overflow: 'hidden',
-  },
-  image: {
-    width: '100%',
-    height: '100%',
-    borderRadius: 10,
-  },
-});
