@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "WhereIsMainMenu",
-    "slug": "WhereIsMainMenu",
+    "name": "WhereIsApp_ICAT3130",
+    "slug": "WhereIsApp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -19,10 +19,14 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.burak.whereis"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-font"
+    ]
   }
 }
