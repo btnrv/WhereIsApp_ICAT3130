@@ -86,7 +86,7 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace "com.whereisappicat3130"
+    namespace 'com.burak.whereis'
     defaultConfig {
         applicationId 'com.burak.whereis'
         minSdkVersion rootProject.ext.minSdkVersion

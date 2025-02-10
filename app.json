@@ -7,6 +7,11 @@
     "icon": "./assets/whereisicon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/whereisicon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/whereisicon.png",
